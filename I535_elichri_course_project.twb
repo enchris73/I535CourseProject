@@ -1,0 +1,1484 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 20243.24.1010.1014                               -->
+<workbook original-version='18.1' source-build='2024.3.0 (20243.24.1010.1014)' source-platform='win' version='18.1' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <document-format-change-manifest>
+    <AnimationOnByDefault />
+    <MarkAnimation />
+    <ObjectModelEncapsulateLegacy />
+    <ObjectModelTableType />
+    <SchemaViewerObjectModel />
+    <SheetIdentifierTracking />
+    <WindowsPersistSimpleIdentifiers />
+  </document-format-change-manifest>
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='VaccinationData+ (COVID19CDCDataUS)' inline='true' name='federated.0ycpddt0khf59j13u7iw20jnmzdy' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.139ci2i1h3ycxa15imvhr1byq7bu'>
+            <connection CATALOG='fa24-i535-elichri-covid19stats' EXECCATALOG='fa24-i535-elichri-covid19stats' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='FA24-I535-elichri-COVID19Stats' schema='COVID19CDCDataUS' server-oauth='' username='elichri@iu.edu' />
+          </named-connection>
+        </named-connections>
+        <relation type='collection'>
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='VaccinationData' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[VaccinationData]' type='table' />
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenAdministeredDaily' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenAdministeredDaily]' type='table' />
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenBivalentBooster' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenBivalentBooster]' type='table' />
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenFirstDose' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenFirstDose]' type='table' />
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenInitialBooster' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenInitialBooster]' type='table' />
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenInitialSeriesCompleted' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenInitialSeriesCompleted]' type='table' />
+          <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenSecondBoosterFiftyPlus' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenSecondBoosterFiftyPlus]' type='table' />
+        </relation>
+        <cols>
+          <map key='[Admin_Dose_1_Daily]' value='[VaccinationData].[Admin_Dose_1_Daily]' />
+          <map key='[Administered_Daily (TopTenAdministeredDaily)]' value='[TopTenAdministeredDaily].[Administered_Daily]' />
+          <map key='[Administered_Daily]' value='[VaccinationData].[Administered_Daily]' />
+          <map key='[Bivalent_Booster]' value='[TopTenBivalentBooster].[Bivalent_Booster]' />
+          <map key='[Bivalent_Booster_Daily]' value='[VaccinationData].[Bivalent_Booster_Daily]' />
+          <map key='[Booster_Daily]' value='[VaccinationData].[Booster_Daily]' />
+          <map key='[Date (TopTenAdministeredDaily)]' value='[TopTenAdministeredDaily].[Date]' />
+          <map key='[Date (TopTenBivalentBooster)]' value='[TopTenBivalentBooster].[Date]' />
+          <map key='[Date (TopTenFirstDose)]' value='[TopTenFirstDose].[Date]' />
+          <map key='[Date (TopTenInitialBooster)]' value='[TopTenInitialBooster].[Date]' />
+          <map key='[Date (TopTenInitialSeriesCompleted)]' value='[TopTenInitialSeriesCompleted].[Date]' />
+          <map key='[Date (TopTenSecondBoosterFiftyPlus)]' value='[TopTenSecondBoosterFiftyPlus].[Date]' />
+          <map key='[Date]' value='[VaccinationData].[Date]' />
+          <map key='[First_Dose]' value='[TopTenFirstDose].[First_Dose]' />
+          <map key='[ID (TopTenAdministeredDaily)]' value='[TopTenAdministeredDaily].[ID]' />
+          <map key='[ID (TopTenBivalentBooster)]' value='[TopTenBivalentBooster].[ID]' />
+          <map key='[ID (TopTenFirstDose)]' value='[TopTenFirstDose].[ID]' />
+          <map key='[ID (TopTenInitialBooster)]' value='[TopTenInitialBooster].[ID]' />
+          <map key='[ID (TopTenInitialSeriesCompleted)]' value='[TopTenInitialSeriesCompleted].[ID]' />
+          <map key='[ID (TopTenSecondBoosterFiftyPlus)]' value='[TopTenSecondBoosterFiftyPlus].[ID]' />
+          <map key='[ID]' value='[VaccinationData].[ID]' />
+          <map key='[Initial_Booster]' value='[TopTenInitialBooster].[Initial_Booster]' />
+          <map key='[Initial_Series_Completed]' value='[TopTenInitialSeriesCompleted].[Initial_Series_Completed]' />
+          <map key='[Second_Booster_50Plus]' value='[TopTenSecondBoosterFiftyPlus].[Second_Booster_50Plus]' />
+          <map key='[Second_Booster_50Plus_Daily]' value='[VaccinationData].[Second_Booster_50Plus_Daily]' />
+          <map key='[Series_Complete_Daily]' value='[VaccinationData].[Series_Complete_Daily]' />
+        </cols>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Administered_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Administered_Daily]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Administered_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Admin_Dose_1_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Admin_Dose_1_Daily]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Admin_Dose_1_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Series_Complete_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Series_Complete_Daily]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Series_Complete_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Booster_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Booster_Daily]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Booster_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second_Booster_50Plus_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Second_Booster_50Plus_Daily]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Second_Booster_50Plus_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bivalent_Booster_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bivalent_Booster_Daily]</local-name>
+            <parent-name>[VaccinationData]</parent-name>
+            <remote-alias>Bivalent_Booster_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[VaccinationData_4E686AE403264A0580C1F6596624D8E4]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (TopTenAdministeredDaily)]</local-name>
+            <parent-name>[TopTenAdministeredDaily]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenAdministeredDaily_6DA9EA19E88540F8B0DEE99A7813AC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (TopTenAdministeredDaily)]</local-name>
+            <parent-name>[TopTenAdministeredDaily]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenAdministeredDaily_6DA9EA19E88540F8B0DEE99A7813AC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Administered_Daily</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Administered_Daily (TopTenAdministeredDaily)]</local-name>
+            <parent-name>[TopTenAdministeredDaily]</parent-name>
+            <remote-alias>Administered_Daily</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenAdministeredDaily_6DA9EA19E88540F8B0DEE99A7813AC31]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (TopTenBivalentBooster)]</local-name>
+            <parent-name>[TopTenBivalentBooster]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenBivalentBooster_537116B17DE94104A104DE2BC5D98200]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (TopTenBivalentBooster)]</local-name>
+            <parent-name>[TopTenBivalentBooster]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenBivalentBooster_537116B17DE94104A104DE2BC5D98200]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Bivalent_Booster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Bivalent_Booster]</local-name>
+            <parent-name>[TopTenBivalentBooster]</parent-name>
+            <remote-alias>Bivalent_Booster</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenBivalentBooster_537116B17DE94104A104DE2BC5D98200]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (TopTenFirstDose)]</local-name>
+            <parent-name>[TopTenFirstDose]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenFirstDose_C5B4FA3F44E1467EAC79A831A8F72843]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (TopTenFirstDose)]</local-name>
+            <parent-name>[TopTenFirstDose]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenFirstDose_C5B4FA3F44E1467EAC79A831A8F72843]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>First_Dose</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[First_Dose]</local-name>
+            <parent-name>[TopTenFirstDose]</parent-name>
+            <remote-alias>First_Dose</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenFirstDose_C5B4FA3F44E1467EAC79A831A8F72843]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (TopTenInitialBooster)]</local-name>
+            <parent-name>[TopTenInitialBooster]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenInitialBooster_B2CBAD986D254DE281DAEFE48A50E4E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (TopTenInitialBooster)]</local-name>
+            <parent-name>[TopTenInitialBooster]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenInitialBooster_B2CBAD986D254DE281DAEFE48A50E4E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_Booster</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Initial_Booster]</local-name>
+            <parent-name>[TopTenInitialBooster]</parent-name>
+            <remote-alias>Initial_Booster</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenInitialBooster_B2CBAD986D254DE281DAEFE48A50E4E3]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (TopTenInitialSeriesCompleted)]</local-name>
+            <parent-name>[TopTenInitialSeriesCompleted]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenInitialSeriesCompleted_2D86E8BE80C84F9399F028C1B4F0A403]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (TopTenInitialSeriesCompleted)]</local-name>
+            <parent-name>[TopTenInitialSeriesCompleted]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenInitialSeriesCompleted_2D86E8BE80C84F9399F028C1B4F0A403]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Initial_Series_Completed</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Initial_Series_Completed]</local-name>
+            <parent-name>[TopTenInitialSeriesCompleted]</parent-name>
+            <remote-alias>Initial_Series_Completed</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenInitialSeriesCompleted_2D86E8BE80C84F9399F028C1B4F0A403]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ID (TopTenSecondBoosterFiftyPlus)]</local-name>
+            <parent-name>[TopTenSecondBoosterFiftyPlus]</parent-name>
+            <remote-alias>ID</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenSecondBoosterFiftyPlus_1D9FF7A9D51C4FF1A90CF34D47E769CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Date</remote-name>
+            <remote-type>7</remote-type>
+            <local-name>[Date (TopTenSecondBoosterFiftyPlus)]</local-name>
+            <parent-name>[TopTenSecondBoosterFiftyPlus]</parent-name>
+            <remote-alias>Date</remote-alias>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenSecondBoosterFiftyPlus_1D9FF7A9D51C4FF1A90CF34D47E769CB]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>Second_Booster_50Plus</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[Second_Booster_50Plus]</local-name>
+            <parent-name>[TopTenSecondBoosterFiftyPlus]</parent-name>
+            <remote-alias>Second_Booster_50Plus</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[TopTenSecondBoosterFiftyPlus_1D9FF7A9D51C4FF1A90CF34D47E769CB]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Admin Dose 1 Daily' datatype='integer' name='[Admin_Dose_1_Daily]' role='measure' type='quantitative' />
+      <column caption='Administered Daily (TopTenAdministeredDaily)' datatype='integer' name='[Administered_Daily (TopTenAdministeredDaily)]' role='measure' type='quantitative' />
+      <column caption='Administered Daily' datatype='integer' name='[Administered_Daily]' role='measure' type='quantitative' />
+      <column caption='Bivalent Booster' datatype='integer' name='[Bivalent_Booster]' role='measure' type='quantitative' />
+      <column caption='Bivalent Booster Daily' datatype='integer' name='[Bivalent_Booster_Daily]' role='measure' type='quantitative' />
+      <column caption='Booster Daily' datatype='integer' name='[Booster_Daily]' role='measure' type='quantitative' />
+      <column caption='First Dose' datatype='integer' name='[First_Dose]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[ID (TopTenAdministeredDaily)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID (TopTenBivalentBooster)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID (TopTenFirstDose)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID (TopTenInitialBooster)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID (TopTenInitialSeriesCompleted)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID (TopTenSecondBoosterFiftyPlus)]' role='dimension' type='ordinal' />
+      <column datatype='integer' name='[ID]' role='dimension' type='ordinal' />
+      <column caption='Initial Booster' datatype='integer' name='[Initial_Booster]' role='measure' type='quantitative' />
+      <column caption='Initial Series Completed' datatype='integer' name='[Initial_Series_Completed]' role='measure' type='quantitative' />
+      <column caption='Second Booster 50Plus' datatype='integer' name='[Second_Booster_50Plus]' role='measure' type='quantitative' />
+      <column caption='Second Booster 50Plus Daily' datatype='integer' name='[Second_Booster_50Plus_Daily]' role='measure' type='quantitative' />
+      <column caption='Series Complete Daily' datatype='integer' name='[Series_Complete_Daily]' role='measure' type='quantitative' />
+      <column caption='TopTenAdministeredDaily' datatype='table' name='[__tableau_internal_object_id__].[TopTenAdministeredDaily_6DA9EA19E88540F8B0DEE99A7813AC31]' role='measure' type='quantitative' />
+      <column caption='TopTenBivalentBooster' datatype='table' name='[__tableau_internal_object_id__].[TopTenBivalentBooster_537116B17DE94104A104DE2BC5D98200]' role='measure' type='quantitative' />
+      <column caption='TopTenFirstDose' datatype='table' name='[__tableau_internal_object_id__].[TopTenFirstDose_C5B4FA3F44E1467EAC79A831A8F72843]' role='measure' type='quantitative' />
+      <column caption='TopTenInitialBooster' datatype='table' name='[__tableau_internal_object_id__].[TopTenInitialBooster_B2CBAD986D254DE281DAEFE48A50E4E3]' role='measure' type='quantitative' />
+      <column caption='TopTenInitialSeriesCompleted' datatype='table' name='[__tableau_internal_object_id__].[TopTenInitialSeriesCompleted_2D86E8BE80C84F9399F028C1B4F0A403]' role='measure' type='quantitative' />
+      <column caption='TopTenSecondBoosterFiftyPlus' datatype='table' name='[__tableau_internal_object_id__].[TopTenSecondBoosterFiftyPlus_1D9FF7A9D51C4FF1A90CF34D47E769CB]' role='measure' type='quantitative' />
+      <column caption='VaccinationData' datatype='table' name='[__tableau_internal_object_id__].[VaccinationData_4E686AE403264A0580C1F6596624D8E4]' role='measure' type='quantitative' />
+      <column-instance column='[Admin_Dose_1_Daily]' derivation='Sum' name='[sum:Admin_Dose_1_Daily:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Administered_Daily]' derivation='Sum' name='[sum:Administered_Daily:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Bivalent_Booster_Daily]' derivation='Sum' name='[sum:Bivalent_Booster_Daily:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Booster_Daily]' derivation='Sum' name='[sum:Booster_Daily:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Second_Booster_50Plus_Daily]' derivation='Sum' name='[sum:Second_Booster_50Plus_Daily:qk]' pivot='key' type='quantitative' />
+      <column-instance column='[Series_Complete_Daily]' derivation='Sum' name='[sum:Series_Complete_Daily:qk]' pivot='key' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <style>
+        <style-rule element='mark'>
+          <encoding attr='color' field='[:Measure Names]' type='palette'>
+            <map to='#4e79a7'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Admin_Dose_1_Daily:qk]&quot;</bucket>
+            </map>
+            <map to='#59a14f'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Second_Booster_50Plus_Daily:qk]&quot;</bucket>
+            </map>
+            <map to='#76b7b2'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Booster_Daily:qk]&quot;</bucket>
+            </map>
+            <map to='#b07aa1'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy]&quot;</bucket>
+            </map>
+            <map to='#e15759'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Bivalent_Booster_Daily:qk]&quot;</bucket>
+            </map>
+            <map to='#edc948'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Series_Complete_Daily:qk]&quot;</bucket>
+            </map>
+            <map to='#f28e2b'>
+              <bucket>&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Administered_Daily:qk]&quot;</bucket>
+            </map>
+          </encoding>
+        </style-rule>
+      </style>
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='TopTenAdministeredDaily' id='TopTenAdministeredDaily_6DA9EA19E88540F8B0DEE99A7813AC31'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenAdministeredDaily' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenAdministeredDaily]' type='table' />
+            </properties>
+          </object>
+          <object caption='TopTenBivalentBooster' id='TopTenBivalentBooster_537116B17DE94104A104DE2BC5D98200'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenBivalentBooster' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenBivalentBooster]' type='table' />
+            </properties>
+          </object>
+          <object caption='TopTenFirstDose' id='TopTenFirstDose_C5B4FA3F44E1467EAC79A831A8F72843'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenFirstDose' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenFirstDose]' type='table' />
+            </properties>
+          </object>
+          <object caption='TopTenInitialBooster' id='TopTenInitialBooster_B2CBAD986D254DE281DAEFE48A50E4E3'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenInitialBooster' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenInitialBooster]' type='table' />
+            </properties>
+          </object>
+          <object caption='TopTenInitialSeriesCompleted' id='TopTenInitialSeriesCompleted_2D86E8BE80C84F9399F028C1B4F0A403'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenInitialSeriesCompleted' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenInitialSeriesCompleted]' type='table' />
+            </properties>
+          </object>
+          <object caption='TopTenSecondBoosterFiftyPlus' id='TopTenSecondBoosterFiftyPlus_1D9FF7A9D51C4FF1A90CF34D47E769CB'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='TopTenSecondBoosterFiftyPlus' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[TopTenSecondBoosterFiftyPlus]' type='table' />
+            </properties>
+          </object>
+          <object caption='VaccinationData' id='VaccinationData_4E686AE403264A0580C1F6596624D8E4'>
+            <properties context=''>
+              <relation connection='bigquery.139ci2i1h3ycxa15imvhr1byq7bu' name='VaccinationData' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[VaccinationData]' type='table' />
+            </properties>
+          </object>
+        </objects>
+        <relationships>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (TopTenAdministeredDaily)]' />
+            </expression>
+            <first-end-point object-id='VaccinationData_4E686AE403264A0580C1F6596624D8E4' />
+            <second-end-point object-id='TopTenAdministeredDaily_6DA9EA19E88540F8B0DEE99A7813AC31' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (TopTenBivalentBooster)]' />
+            </expression>
+            <first-end-point object-id='VaccinationData_4E686AE403264A0580C1F6596624D8E4' />
+            <second-end-point object-id='TopTenBivalentBooster_537116B17DE94104A104DE2BC5D98200' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (TopTenFirstDose)]' />
+            </expression>
+            <first-end-point object-id='VaccinationData_4E686AE403264A0580C1F6596624D8E4' />
+            <second-end-point object-id='TopTenFirstDose_C5B4FA3F44E1467EAC79A831A8F72843' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (TopTenInitialBooster)]' />
+            </expression>
+            <first-end-point object-id='VaccinationData_4E686AE403264A0580C1F6596624D8E4' />
+            <second-end-point object-id='TopTenInitialBooster_B2CBAD986D254DE281DAEFE48A50E4E3' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (TopTenInitialSeriesCompleted)]' />
+            </expression>
+            <first-end-point object-id='VaccinationData_4E686AE403264A0580C1F6596624D8E4' />
+            <second-end-point object-id='TopTenInitialSeriesCompleted_2D86E8BE80C84F9399F028C1B4F0A403' />
+          </relationship>
+          <relationship>
+            <expression op='='>
+              <expression op='[Date]' />
+              <expression op='[Date (TopTenSecondBoosterFiftyPlus)]' />
+            </expression>
+            <first-end-point object-id='VaccinationData_4E686AE403264A0580C1F6596624D8E4' />
+            <second-end-point object-id='TopTenSecondBoosterFiftyPlus_1D9FF7A9D51C4FF1A90CF34D47E769CB' />
+          </relationship>
+        </relationships>
+      </object-graph>
+    </datasource>
+    <datasource caption='StateTotals (COVID19CDCDataUS)' inline='true' name='federated.073trhe1lylncp16l2wxh0wqywuq' version='18.1'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='BigQuery' name='bigquery.0mxlt1f1py3ygm12c34ck0rj33if'>
+            <connection CATALOG='fa24-i535-elichri-covid19stats' EXECCATALOG='fa24-i535-elichri-covid19stats' authentication='oauth' class='bigquery' connection-dialect='google-sql' project='FA24-I535-elichri-COVID19Stats' schema='COVID19CDCDataUS' server-oauth='' username='elichri@iu.edu' />
+          </named-connection>
+        </named-connections>
+        <relation connection='bigquery.0mxlt1f1py3ygm12c34ck0rj33if' name='StateTotals' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[StateTotals]' type='table' />
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>State</remote-name>
+            <remote-type>130</remote-type>
+            <local-name>[State]</local-name>
+            <parent-name>[StateTotals]</parent-name>
+            <remote-alias>State</remote-alias>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[StateTotals_2B19D206077044128243F666F02D9F15]</object-id>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>TotalVaccinations</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[TotalVaccinations]</local-name>
+            <parent-name>[StateTotals]</parent-name>
+            <remote-alias>TotalVaccinations</remote-alias>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <object-id>[StateTotals_2B19D206077044128243F666F02D9F15]</object-id>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <column caption='Total Vaccinations' datatype='integer' name='[TotalVaccinations]' role='measure' type='quantitative' />
+      <column caption='StateTotals' datatype='table' name='[__tableau_internal_object_id__].[StateTotals_2B19D206077044128243F666F02D9F15]' role='measure' type='quantitative' />
+      <layout dim-ordering='alphabetic' measure-ordering='alphabetic' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <object-graph>
+        <objects>
+          <object caption='StateTotals' id='StateTotals_2B19D206077044128243F666F02D9F15'>
+            <properties context=''>
+              <relation connection='bigquery.0mxlt1f1py3ygm12c34ck0rj33if' name='StateTotals' table='[fa24-i535-elichri-covid19stats.COVID19CDCDataUS].[StateTotals]' type='table' />
+            </properties>
+          </object>
+        </objects>
+      </object-graph>
+    </datasource>
+  </datasources>
+  <worksheets>
+    <worksheet name='State Totals Bar Graph'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Total Doses Administered by State, Territory, or Agency</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='StateTotals (COVID19CDCDataUS)' name='federated.073trhe1lylncp16l2wxh0wqywuq' />
+          </datasources>
+          <datasource-dependencies datasource='federated.073trhe1lylncp16l2wxh0wqywuq'>
+            <column datatype='string' name='[State]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+            <column caption='Total Vaccinations' datatype='integer' name='[TotalVaccinations]' role='measure' type='quantitative' />
+            <column-instance column='[State]' derivation='None' name='[none:State:nk]' pivot='key' type='nominal' />
+            <column-instance column='[TotalVaccinations]' derivation='Sum' name='[sum:TotalVaccinations:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.073trhe1lylncp16l2wxh0wqywuq].[none:State:nk]'>
+            <groupfilter function='except' user:ui-domain='relevant' user:ui-enumeration='exclusive' user:ui-marker='enumerate'>
+              <groupfilter function='level-members' level='[none:State:nk]' />
+              <groupfilter function='member' level='[none:State:nk]' member='&quot;United States&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.073trhe1lylncp16l2wxh0wqywuq].[none:State:nk]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style />
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='0.43878453969955444' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>[federated.073trhe1lylncp16l2wxh0wqywuq].[sum:TotalVaccinations:qk]</rows>
+        <cols>[federated.073trhe1lylncp16l2wxh0wqywuq].[none:State:nk]</cols>
+      </table>
+      <simple-id uuid='{9435CC65-9B35-4142-96FC-C66AE25FB78E}' />
+    </worksheet>
+    <worksheet name='Top 10 Bar Graphs'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Dosage Types - Highest 10 Daily Administration Totals</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VaccinationData+ (COVID19CDCDataUS)' name='federated.0ycpddt0khf59j13u7iw20jnmzdy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ycpddt0khf59j13u7iw20jnmzdy'>
+            <column caption='Administered Daily (TopTenAdministeredDaily)' datatype='integer' name='[Administered_Daily (TopTenAdministeredDaily)]' role='measure' type='quantitative' />
+            <column caption='Bivalent Booster' datatype='integer' name='[Bivalent_Booster]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='First Dose' datatype='integer' name='[First_Dose]' role='measure' type='quantitative' />
+            <column caption='Initial Booster' datatype='integer' name='[Initial_Booster]' role='measure' type='quantitative' />
+            <column caption='Initial Series Completed' datatype='integer' name='[Initial_Series_Completed]' role='measure' type='quantitative' />
+            <column caption='Second Booster 50Plus' datatype='integer' name='[Second_Booster_50Plus]' role='measure' type='quantitative' />
+            <column-instance column='[Date]' derivation='None' name='[none:Date:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Administered_Daily (TopTenAdministeredDaily)]' derivation='Sum' name='[sum:Administered_Daily (TopTenAdministeredDaily):qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bivalent_Booster]' derivation='Sum' name='[sum:Bivalent_Booster:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[First_Dose]' derivation='Sum' name='[sum:First_Dose:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Initial_Booster]' derivation='Sum' name='[sum:Initial_Booster:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Initial_Series_Completed]' derivation='Sum' name='[sum:Initial_Series_Completed:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Second_Booster_50Plus]' derivation='Sum' name='[sum:Second_Booster_50Plus:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='label'>
+            <format attr='text-format' field='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[none:Date:qk]' value='*m/d/yyyy' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Administered_Daily (TopTenAdministeredDaily):qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='mark-color' value='#4e79a7' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='2' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Bivalent_Booster:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='mark-color' value='#8cd17d' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='3' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:First_Dose:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='mark-color' value='#f1ce63' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='4' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Initial_Booster:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='mark-color' value='#f17b79' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='5' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Initial_Series_Completed:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='mark-color' value='#d7b5a6' />
+              </style-rule>
+            </style>
+          </pane>
+          <pane id='6' selection-relaxation-option='selection-relaxation-allow' y-axis-name='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Second_Booster_50Plus:qk]'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Bar' />
+            <mark-sizing custom-mark-size-in-axis-units='1.0' mark-alignment='mark-alignment-left' mark-sizing-setting='marks-scaling-on' use-custom-mark-size='false' />
+            <style>
+              <style-rule element='mark'>
+                <format attr='size' value='1.5' />
+                <format attr='mark-color' value='#76b7b2' />
+              </style-rule>
+            </style>
+          </pane>
+        </panes>
+        <rows>([federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Administered_Daily (TopTenAdministeredDaily):qk] + ([federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:First_Dose:qk] + ([federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Initial_Series_Completed:qk] + ([federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Initial_Booster:qk] + ([federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Second_Booster_50Plus:qk] + [federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Bivalent_Booster:qk])))))</rows>
+        <cols>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[none:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{BC93E293-50F0-4258-BD41-13F154844B44}' />
+    </worksheet>
+    <worksheet name='Totals Combined Line Graph'>
+      <layout-options>
+        <title>
+          <formatted-text>
+            <run>Doses Administered Daily by Type</run>
+          </formatted-text>
+        </title>
+      </layout-options>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='VaccinationData+ (COVID19CDCDataUS)' name='federated.0ycpddt0khf59j13u7iw20jnmzdy' />
+          </datasources>
+          <datasource-dependencies datasource='federated.0ycpddt0khf59j13u7iw20jnmzdy'>
+            <column caption='Admin Dose 1 Daily' datatype='integer' name='[Admin_Dose_1_Daily]' role='measure' type='quantitative' />
+            <column caption='Administered Daily' datatype='integer' name='[Administered_Daily]' role='measure' type='quantitative' />
+            <column caption='Bivalent Booster Daily' datatype='integer' name='[Bivalent_Booster_Daily]' role='measure' type='quantitative' />
+            <column caption='Booster Daily' datatype='integer' name='[Booster_Daily]' role='measure' type='quantitative' />
+            <column datatype='date' name='[Date]' role='dimension' type='ordinal' />
+            <column caption='Second Booster 50Plus Daily' datatype='integer' name='[Second_Booster_50Plus_Daily]' role='measure' type='quantitative' />
+            <column caption='Series Complete Daily' datatype='integer' name='[Series_Complete_Daily]' role='measure' type='quantitative' />
+            <column-instance column='[Admin_Dose_1_Daily]' derivation='Sum' name='[sum:Admin_Dose_1_Daily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Administered_Daily]' derivation='Sum' name='[sum:Administered_Daily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Bivalent_Booster_Daily]' derivation='Sum' name='[sum:Bivalent_Booster_Daily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Booster_Daily]' derivation='Sum' name='[sum:Booster_Daily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Second_Booster_50Plus_Daily]' derivation='Sum' name='[sum:Second_Booster_50Plus_Daily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Series_Complete_Daily]' derivation='Sum' name='[sum:Series_Complete_Daily:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[Date]' derivation='Month-Trunc' name='[tmn:Date:qk]' pivot='key' type='quantitative' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[:Measure Names]'>
+            <groupfilter function='union' user:op='manual'>
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Admin_Dose_1_Daily:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Administered_Daily:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Bivalent_Booster_Daily:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Booster_Daily:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Second_Booster_50Plus_Daily:qk]&quot;' />
+              <groupfilter function='member' level='[:Measure Names]' member='&quot;[federated.0ycpddt0khf59j13u7iw20jnmzdy].[sum:Series_Complete_Daily:qk]&quot;' />
+            </groupfilter>
+          </filter>
+          <slices>
+            <column>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[:Measure Names]</column>
+          </slices>
+          <aggregation value='true' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <format attr='title' class='0' field='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[tmn:Date:qk]' scope='cols' value='Date' />
+            <format attr='title' class='0' field='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[Multiple Values]' scope='rows' value='Doses Administered' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='1' selection-relaxation-option='selection-relaxation-allow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Line' />
+            <encodings>
+              <color column='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[:Measure Names]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[Multiple Values]</rows>
+        <cols>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[tmn:Date:qk]</cols>
+      </table>
+      <simple-id uuid='{1F70025E-CDB6-4402-8A27-EEB5AFD22AEF}' />
+    </worksheet>
+  </worksheets>
+  <windows source-height='51'>
+    <window class='worksheet' name='Top 10 Bar Graphs'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{F48D2EE5-CD53-47AF-83AC-B576F6E2601F}' />
+    </window>
+    <window class='worksheet' name='Totals Combined Line Graph'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+            <card type='measures' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+        <edge name='right'>
+          <strip size='160'>
+            <card pane-specification-id='1' param='[federated.0ycpddt0khf59j13u7iw20jnmzdy].[:Measure Names]' type='color' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[:Measure Names]</field>
+            <field>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[none:Calculation_1728256374224310273:qk]</field>
+            <field>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{54496321-6D17-48F9-A238-B4E24FE75D94}' />
+    </window>
+    <window class='worksheet' maximized='true' name='State Totals Bar Graph'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='31'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.073trhe1lylncp16l2wxh0wqywuq].[none:State:nk]</field>
+            <field>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[yr:Date (TopTenAdministeredDaily):ok]</field>
+            <field>[federated.0ycpddt0khf59j13u7iw20jnmzdy].[yr:Date:ok]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+      <simple-id uuid='{DFCB7408-E928-4DF9-B3A1-5241F7F63ED3}' />
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='State Totals Bar Graph' width='192'>
+      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
+    </thumbnail>
+    <thumbnail height='192' name='Top 10 Bar Graphs' width='192'>
+      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
+      aCxSAcQr7f8Dzk4w8+rQAeMAAAAASUVORK5CYII=
+    </thumbnail>
+    <thumbnail height='192' name='Totals Combined Line Graph' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nO29d5xkV3nn/T03VK7q6q7OaWY0OQdlJIGERDAiGYyN8WtesPFi7+uAYbE/
+      fm2v2bX3/YC9u+AFY4yNscHGgAUCjBBJSAKFkWZGGk1OPalzqK6uHG447x81Haqrurs6TVd3
+      11dhpm7dOvfcqvu795znPEFIKSVVqqxTlKVsrKqlKquNJRWAbdtL2VyVKsvOkgqgSpXVRlUA
+      VdY1VQFUWddUBVBlXVMVQJV1TVUAVdY1Wjk7TbXvSykRQiABMWUfIUTR5yqR8XNZLf2tsryU
+      JQCsHCfPXyHk1ekZHCMY8pLNQjo2yrbN7VwZMTi48xag8hfDzK6fgG2ibX39SnelSgVQngBU
+      B3U1PrBz6IrEEk68Lkmtu46LPVEa62qQUmLbdoULQJI99s+oLQcQtzy40p2pUgGUJQDbyJDJ
+      ZKivr6deddMY9JI0BH63g7omE1XVUBQFKSWqqi53nxeMNXweRVEhNYymlaf9Kmubsq4C1eFm
+      y5YtAASDQQBcN95zOJ3L0rGlR2Kc+iaOQ+8ld+qbK92ZKhXCurECyWwce7QLdeM9YKQqfKhW
+      5WaxbgRgXPwR2ubXIlQHaC4wkivdpSoVwLoQgLQtzAs/QNv+cwAIpx+ZTaxwr6pUAutCAPbQ
+      GZRAK4q7FgDhrUcmh1e4V1UqgbUvAJmf/Oq73zGxSfE3Y8cHVrBTVSqFNS8AmRnDjvWiNO2Z
+      2Cb8zciqAKqwDgRgnH8cbesbEMrkqSq+ZuxEVQBV1rgApG1idv0EfevrCrYLbwMyObJCvapS
+      SaxpAVj9r6DU3YJwBQq2C6e3agWqAqxhAcgSk98JdA+YGaRt3fyOVako1q4AUiPI1ChKw/ai
+      94RQELoHctXFsPXOmhWAefa76Dsentnv3+lHZuM3t1NVKo41KQBpGZhXn0Hb/MCM+yi+RmRy
+      6Cb2qkolUpYApLQZCY9iWwZXrnWTio8xFB5jdHQU28oxGqmsO6nVcwSlcSfC4Z1xH1FdDKtC
+      2RFhJtF4gmRkkIx0MxgeAymJhYdINDSSMBSCNd6KCYjJnXoU7fbfwDTNGfeRngbssWuIWfap
+      svYpLyDGthjq76WxsYFMZBjTHwBb0NDcxMBwlFCormICYmQmCtkYesPWWeN+RU0bRs+L1cCY
+      dU7ZATF33313/sXmwvda25e6S4vDToVRAi1zBr0LTwiZGr1JvapSqay5SbCM9SP8rXPuJ5xe
+      ZK66GLbeWXMCsON9KIGWuXfU3GAbSLs6B1jPrDkBlP0EEAKhe6HqErGuWXMCsBODKP7G8nZ2
+      BZDZ2PJ2qEpFs+YEIDNRhCtY1r6Krwk7MbjMPapSyawpAUjbAiMNDl9Z+1cDY6qsKQFgpEB3
+      l533sxoaWWVNCUBmYginv+z9ha/6BFjvrCkB2PEBFH8ZJtAbCHcQmR5bxh5VqXTWlABkvA9R
+      zhrADYTTl18MqwD/pSorw5oSgB3rRyljDWAcoTpB2kjbWMZeValk1pQAZLwf4W8u/wNCIBy+
+      anzwOmZtCSAdQdzI/lYuwl0Dmegy9ahKpbNmBCCljczGizJAzIWo5gha15RXI8zMcrlniFs2
+      tHPpUhe1ATexLAgrR0dLHd0jWTa1l+l+sFwYGVB1hDI//36luhi2rinrahGaE7dDZXSwl9FY
+      EofTgQak4qNcyJo4XE5s217RiDCZiYHumTUKrOTnPA1Y/a9UI8PWKWUJwMqlGRgYoKm5BY9D
+      QUibrCVoaOskMhYj4HGveESYlQ6j+JvnHeFl17RiX/pRNTJsnVJ2RNihQ4cAaGsttLOHQg1L
+      36sFYMf65rUINoGrJh9GWWVdsnYmwbF+RKD8NYBxxhfDKiGYv8rNZ80IwI4v7AkgVAcIBazs
+      MvSqSqWzZgQgU2GEN7Sgz1YXw9Yva0IAUsp5BcJMR7hrkenIEveqympgTQgAKwdSIrSF1SwW
+      /iZkNTJsXbImBCCNFMLhWfDnFX9LNTBmnbI2BJAaRXgWNv6HamjkemZtCCDWV1YqlJlQfI3V
+      4Ph1ypoQQNnJsGZAOAOQqaZHWY+sCQGUmwxrRqqLYeuWNSEAOzGE4lu4S4ZQNFAdYKaXsFdV
+      VgNrQAASmRlDuBe2BjCOcFQrR65HVr0ApG2BmQV95mow5VBNl74+WfUCwEjPKxnWTOQDY/qX
+      qFNVVgtlR4Sd7epmQ0sdly714K/zksmCkY6zdWMzXUM59m7rXO6+lu5bJpq34iwS4W+umkLX
+      IWVHhAX9HlRVJ9TciGXm8LokNipnr49SF/CtWESYPdYD/uZ5R4JNR3oasQbPLrqdKquLsiPC
+      IpEIpmmQyRiE6mpIm1AfCuFLp3G6XCsWEWYkB1Fr2hYd0WUHmrFSI9XIsHVG2RFhu3fvLvme
+      11deJublwo71o7bsX3Q7olo4e12y6ifBMjGA4m9afEMOLxgppLQX31aVVcPqF0AqAvNMhlUK
+      oaigufIp1qusG1a1AKS0kbnEkliBoLoYth5Z1QLIJ8Ny5O/eS4DwNiCTI0vSVpXVwaoWgMwl
+      EI7FrQBPJV8xproYtp5Y3QJIDM4vG/QcCH9zNTRynbGqBbDgZFgzUH0CrD9WtQBkrB9lAcmw
+      ZkJ466tzgHXGqhaAHe9HLOETQDiqi2HrjaKV4FR0hKefO4IiHNz/xgdZWKKRm4NMhRGeuqVr
+      0OEBM4u0TIRadYlYDxQ9ATw19Wzd1I6UksU5GC8vE8mwFhkIMxUhlBuVI6tJstYLJYdAmfQo
+      ybiBdbN7Mx+sbL7Gl+pY0maV4AbssWtL2maVyqWkABxOP/5QoLKHP0YaoS88GdZMKKEt2OFL
+      S95ulcqkpACEZeNyOSeeAFJKMtks0rZIJFOYRo50Jkc2m0VKi2z25pcZlckRhKd+ydutCmB9
+      UXKmlzWTDPekMAEdwMpx+Wo3QY9GNJpCuHSkBcnICJ0bWumP2uzbvhEpJbZ9c7wp7WhvPopr
+      2vGyhsUPjnTx8F1bUZUFzGJ8TdixgZt2HlVWlpJPALcniOYQE+qQQkWRJlnDQlUUEAJFCJqa
+      Q1zrH6PGpd78SLB46YIYp68M8ZOXrvCPj72MtYCLWDh8YGWRZrVewHqg6AkgZY4XX3iFmoa2
+      qRupq6vDHwiQyxl4nDpZC1wOjcYWC0VRJiLCFOUmLS3E+1EbdxYd78VzffzuO+/k5YsDfOkH
+      J3jfzx3Ii3YeCE8dIjO2qGxzVVYHRVeGEA527t7B4LXLjI/sFU2nsbERt8tFTcCP7nTh87jQ
+      NA2n04mu6ze522AnhxHTkmFlDZP+cIJNzUHe+Zqd+NwOvvyDE5NPAikxYscxEmdnbVup3YQd
+      ubJcXa9SQRQJQEoDl+5g894DLK2BcQmREpkeQ7gKA2EudI+yubUWVVVQhOBd9+/Goan8649O
+      Yts22fBPSPd8mezQ92dtXqnfij1ycTnP4KYibQuqaR9LUmJsoGBZOcJDwxW7DiBtM18UQ3cX
+      bH/hTA937WqfeK0ognc/uAcBfPnb3yAXPY5v23/Dzg0h7ZktV0rdLdijXcvV/ZuKNLOkv/EB
+      ZDXtY0lKDIFUUukMLS2NFesoJDNjCIevIBmWYVpcG4yyua3wqSCw+PkdRzCMDI9dfR2oXlRn
+      C1ame8b28+nSh9ZEstzcS1/GTg5hDZxa6a5UJCWGQFkcDi+ZTI5K/fmt/hMoLfsKtl3ui9DR
+      GEDXJqPDpJUhefWvUR1B3v/O95DMWHzjqTOogQMYseMzti90T37IsMrvmnasD+v687he/VGs
+      3pdWujsVSYkngBMhchV997N6jqK131aw7fCZ3oLhj23ESHR9Aj1wAFfzO1FVlfe9cT/DYymO
+      XAtgxk/DTBIXYtWHR0opyT7zSZyv+h3U1kNYAycq+jddKUqOcuKxGKlUZd79pG1hj3ah1G+b
+      2GaYFl19o2zvDCGlxEp3k7zyv3A1vRln/YMTQyVVVXjT3Vs53W2CbWCbyRmPo9ZvwVrFK8LW
+      lZ8iXDUoLfsRrgCYmfy8qUoBRQJIRUeIJrPE4/GKHALJWC/CXYeYMgE+e22ELW11OHUNaSVI
+      XvkU3k0fQa+5tejzzXU+BkYTaIH9mLGXZzyO0rQHe+DkspzDcmMnR8gd/Uecr/7opPhbD2L1
+      zXy+65WS7tBtLU343I6KFIDV+xJqW+GFffhMD3fuyi/cSSOC6t6AopdOleLUVYQQmK49GNGZ
+      5wFKsBN7bOaJcuUiyT33aRx3frCgbKzadmt1HlCCIgEYmSSWbZPKGhVpBTJ7j6G2HZp4nTMt
+      ugejbG7NB8ZYuWEUZ+OMnxdCUF/jZixXj5XtQ8rSyXCFpw6ZjuRt6KsIq+840sygdt5dsF1t
+      3ludB5Sg6BpPx8cIx1LIUm+uMNIykLE+lNoNE9u6eiNsaA6iqfne2tkhFMfs5ZI6G2voHk6h
+      OBqwM6WD4IWiIRw+ZHb1FM+Tlkn2uc/gvOf3iuolCKc/X0hklvWP9UjRNR5oaOOh176Wt7/1
+      jZUngHg/wtuQr+l1g+mLX3ZuGMUx8xMAYENzkGsDY+iB/bObQ2vakNHexXf8JmGcegR1w6tm
+      jJNWGnZgD527yb2qbEpe48ePvci/fPFLZG52b+bA6j2GOsX8aVo2XX0RtnVMFsm2cyMojtmL
+      ZrfV++kdiaP592LGZ57o5mMDVodLhJ0cwTz/OI6D/9eM1XLUtkNYfdV5wFRKCsCl5Qg2beLm
+      ZvqfG6v3JdTWyfH/tYExWkI+HPqUxS8zjtD8s7ZT43MRS2YRej22mURapU2+av1WrJHVYAqV
+      5J77DI47/1PBxHc6eUvQ8eo8YAolBeD0eEnEY0UCyCRjdF25TiwyQt/gCIODg9hGmsHhsWXv
+      qLSMfCKs2slSTNMXv6S0kXYaoc6eLlFTFVxOjUTaQPNswkyV9vsRgTZkrPKHQNbQOWQugdr5
+      qln3U7whZHoUqingJygZETYWy2Emw+Sm7RAZHSUSjiAViSYlidEhksl6cmg0hALLWiJJRnvA
+      04BlA7aJbUvOXR/mbfdsnSxrZKcBB1Z+p1nba6jx0B+OscG3n9zYSwj3juKddD92Jo6Zy4BS
+      uWlSjJPfQN33y1hWGRarmg2YI12IuluWv2OrgJK/an2Nj/qNW3BNf0OAKiS2aZA0ob6lleGR
+      KLW1tcteIsnoP47WcdtECaPrg1Hqa7z4PJO9tHNZFN1bVpmjTS21dA/H2dq6k+Twd1BVteTY
+      2XDXoBhxFO/CC3EvJ9JIkRvtQm87UFaWbNlxG3LgOHrjtjn3XQ+UvFJGx+LoVo4cFIigpX0j
+      Le0bC/ZtbmnnZmD2vYTjtvdPvH7hbC937mwr2MfOjaDo5QXKb2iu4aevXEc5tAkUHWmOIfTi
+      QhtKcAN25HrFCsDsegpt06vLThGvth4ie/izsPddsMjSsmuBojmAZaSIxpP46hsqJi3KhP0/
+      mB//27bk9JUh9t5SaO60skMozvIu1KZaH4ORBAiB5tuFGT9Tcj+lvpItQRLj3HfRdjxc9idE
+      TTsy2lORq/wrQZEAuk+fgGADse5rVEqWTBnrQ/gaJ+z/iXQOXVPxugtj1spZAxjH53aQyZqY
+      lo0eOIgxg19QJadJscd6EJoLMY+nkxAinwY+PrCMPVs9FA2B2ncdwBuNQ0c7K1v/cZLp9v+B
+      0QStoeLe2bkh9MCBstpUFEHA62QskSHk78DK9CKliRCFX4nib8GOD5B3na6sIYNx9jvoO98y
+      o91/JtTW/HqAEij/ybFWKXoCaA4XDQ0NNDSEKmYl2OwrtP9fH4zS2VRTtJ80oih6+blCW+v9
+      9I3EEYoDxVFf2i3ihguBNCvLlVjaJlb3i6gbZjd9lkJtO1R1jLtBpVzjM5If//dPjP8Buoei
+      dDQWCkBKiV3GIthUNjTlXSKAG24RrxTtI4RAuGvz9vMKwup+EbX1wKwLXzMxPqyrLoitBgHE
+      +hC+pgIrx2AkSWPttMUuaQASoZSfoqWzqYbrQ1GAWd0ilLpN2KOVlSbFOPNttF1vW9BnhaLm
+      n2yZ6BL3avVR8QKweo+itk/6/5uWTTJjUOMtvPNJK4NQ3cxnnB6qcROOpvMJvRwN2Ga8pFuE
+      EtqKXUEuEXZqFJmJotRuXHAbauuBaoAMq0IAL6NNGf+nMvnMdNMnftKMomjF84LZcDs0bCnJ
+      GhZCKDfcIi4X7aeEKitNinnh++hbX48QC//5tNZbMavzgMoWgLSMfA7QKeP//nCclhksQOWu
+      AYwjhKAu4GY0lr/r64FDJcMkFV8TdmKwIsbMUkrMS0+gbX3dotpRmnZhD52uiHNaSSpbALE+
+      hL9w/H99KFY0AQawsuWvAUyls3FyHqD6tmEmLhRdFJWUJsUeOoNS0wGOxRmpheYEoeaD5dcx
+      FS0As+coalth+pO8Bag43tfOzR0JVooNzTVcG8gLQFF9IDSkMa1EkhAVU0HSOPNt9F1vm7ft
+      vxTjYZLrmYoWgNX3UsH4H2AokqRpugUIsHNhFMf8C2a0NwToHb4R9igEemAvRrw4i5oa2owd
+      Xtl5gDTS2CMXUVr2Lkl71fWAChaAtAxkfAAR7JjYNm4BCniLbd/SjM1rDWCcoM/FWDIzMezR
+      A4cwosUXhRJa+TxB5uWn0DbdVxASuhjUlv1Y/a+s63lA5Qoglq8AM3X8n8zkSluAygyEKYWu
+      qTh1jUQ6v9KruNuxc4NIu3DlV6ld+bUA49xj83J8mwvh9IORgVWW+WIpmdetJBkN0z0cp9aj
+      EMuCNDJsbKvn2nCWrRuXtpiE2XMUbdr4vz+cKGkBws4ghGPBZsGGoIfhsRR+jxMhVFRXB1b6
+      Kpp30mde+BqRyeF8+dgVcCO2x7oRqgPhnf9EfzaUxh3Yw+dQm/csaburhXkJYGh4BJk1iWkB
+      nKokm0py7hp4PS5s217SiDCz92X0294/Ge0FXBuI0N7gL9gGII04KO6i7eXS0RDgSv8onY35
+      IZTqP0g2cgScU6OmVKSiYaWji7bALATjzHdQtr2pvKiveSCaD2B0H0HWl4iIWwfMSwBNTY1c
+      6x7E4xBkDUFD6waisThen29JI8KktCE5iFa7oaBie+9wgvv2dxZFfJmZCKqzoaxIsFJsaq3l
+      8Omeic8rNXtIjjxeFCVm+psQ6TCqZ+mKc5eDNFLkug/juOMDiAWe40woHbeRfeLP0W5//9w7
+      r0Hm9W16/LXs3FUYNRWsrVvSDgFgpEHREWqhX0/eB6j47jtXNri5GM8XOo6i+vJRYkYE4Zg8
+      v3EnMjW0ecHHWgi5F/8efe8vLMjxTUpJ12iYzXWhkkO38UB5aVtlR5WtJSpyEmzH+4sK1JlW
+      Pl1jwFNcuKmcbHCzEfA4SWaMG8H05M2h/r0Y05zjlNBW7KHZ64stNdbQWaxwF9qONy/o889f
+      v8pXX3mJ69GZMneIfMKs4fML7+QqpjIFMHIRJbSlYFsyk8PrKrYAwfwiwUqhKAK/20E0OVka
+      Va8pNoeqzbuxBk4irZuTXlBaBtlnPonrvg8v6O58tLeb62MRfvXgbRztuT7j/EztuAOr+4XF
+      dndVUpkCCF9CCW0t2NY/kqAlVNrOL42xeQXClKKl3k9/eDIIVHG13aglNmkOFQ4fSuNOrJ6j
+      izpWuRgnvobWeTciuGHunadxcqCPs0MDvHPPfjqDtYwkk+RmmEBr7bdj3qRzqjQqUwCR6wUJ
+      sACuz+ACsZBAmFJsbKrh2uCkf7wQKqq7Eyt1tWA/fffPY5x+dNkXj+xoD+blp9AP/Mq8za7n
+      hoc42tvNL+49iH5jIr+nuZmTAzMkAnYHIZe4aU+2SqLiBCBtC5keRXgKx/TdQzE6SzjBLSQQ
+      phSd0wQAoNfchhEtvDMqdbeAmUbGS19MS4GUNtmf/a98lmdtfsVqL4+GeeZqF+/edwjnFIvR
+      /pY2XhnonVG4StNu7MHTi+r3aqTiBEAuCbobMa26+1AkURwFBkg7g1BdLDZgvT7oYWQsVVBO
+      V/PtwEycK7hohBBoO9+KceY7izrebJjnv48ItKE0zW9xqntsjB9fOs+79x/CPa14uc/hxK3p
+      jKRKl4XSOu7E7H5xwX1erVScAOxod97ddwp5C5CJv4QFSBrzD4QphcepY1o2uSmLaVPNoVPR
+      Nt6H1fMich6uxFJK7BsrybNhp0YxTnwN552/Oa+hT388xmPnT/NL+w7hc5Q2l97a3sGx3tJV
+      b/KOccfKPt5aofIEMHIRpX6aBSi9fBagcYQQ1PpdROKZqRvR/fsw4oUuw0J3obbeinntubLb
+      ty4/RfqRXyfz2EcwLz9dOsuElOSe/Wsct38A4Sx/tXksk+ZbZ07yi3sPUuMqSmg5wda6ei6P
+      hrHsEnlTHT6wDKSZLX5vDVNxArDCl1CnWYD6wnFaZ7AAzScb3Fx0NAboHpo+DzhY0jtU3/02
+      zDPfKWsyLDNRci/9M+5f/Gec934Iq/8E6Ud/k+zhz2HH+hgfd5nXDyNtC3XjPfPq95NdF3nd
+      lu3UeTyz7qcoCltC9VwYGS56TwiB2rJv3cUHVJwAZLQbUVOYb/T6YIyOEnmAYOmeADBeOaZQ
+      AHlz6DDSLrwzikAbKCpy7NrsjUpJ9tlPox/8VRR3LUqwE+c9v4P77Z9FCW0m+9THSX/vo5hd
+      T5J78e9w3vuheTn1hVNJopkMm+tmLwoyzq1t+WFQKeHm1wPW1zygogQgLQOZTSDche4WPcOl
+      TaBQXkWYcmlvCNAzXFgTbCZzqBBiwiQ6G2b3C0gjhbb5gcLP6y70ra/D9Za/xvmq38bqP45+
+      4FdQvPML6nny8iXuv2VL2fOFOo+XnGWRyBUPddZjKdXKEkA2jnD6in7MknmAxj9jxhBaaXHM
+      lzp/PkDetgvvjqXMoQBqx535leFcqnTfcklyL/wdznt/f8a7uhACpXYjznt/H32ege7DiQSp
+      XI4NweKs1jMhgIOtbbzcV6Lwh5a3pkmj9PmsRSpKAHbkKkrtpoJtpmWTzpr43SUsQIsIhCmF
+      Q1dpCHq50j/N6uPbWWQOBRCqjrrhXszLT5ZsL/fC59D3vAPFtzyp1X9y+eK87v7j7G5q4fTQ
+      QPH5CHEjX9DMhQPXGpUlgPBFlPrCCXBiFgvQYgNhSvHQrZv48bHCyC9F84LiRBrF6RH1nW/G
+      OPdY3oV7Clb/K9jRPrTtb1qyvk1lIB7DsCw6aubvAuJQVVr8gZIOcuvNL2heV460cjz73Itc
+      u3yBU2cvcPTIi8TCvRw/tzShgna4C6Wu0NW4byROa/0MPkBWGqHObvmYL9s6Q/SOxCZCJPMI
+      9MA+jFixhUTxNSBcQeyRyRoC0siQffbTOBfoxFYOT16+xAMLuPuPc1tbR0kHObV5H9bAzJUz
+      1xrzigfovnKZTC5DxtbxusCv+7jQHSEUDCxJRJg11o3maymOAqsvjgIDsNKDoIcWHAk2E3fs
+      aOWZE9d46NbJ4Zji20e2/xHU4H1F+6u73k72xCM4XvOHABhHvoC65SFsbxP2EvcN8oteUkqa
+      vL4Fn3uz18dQMkE6l8NREMSkguLASEbyMcNrnHkJoHPLDkItHWDliOegxttMTTaLrjsWHREm
+      zSzCNtHcgYLSPb0jCR44uLFktJdthdGcjQuOBJuJ+/Zv4JNfP8zrb9+CouT7ItUOMmYYVbEQ
+      yrS8pO23Yr74eVQzhR3vRw6fxfHmTxZEsy0VEvjptcu8dvO2RZ/3vuYWzowMcVtb4cq71X4I
+      MfgK2i33L6r91cC8B89erxdvoJbm+lrcbjfBYBCvd/HDEJkZQ7hqCi5+KfN5gGayAFnZxUWC
+      zUSN10VD0EtX3+SYP28O3YCVKh7uCUVF2/IgxrnHyD7zyfzQR12cc95M9ETH0BSVZt/i784H
+      Wto53lfsILee/IIqZhJshy+jTAs1NC2LdM7EV8ICBAvPBlcOpSbDes1t5MZKTxD17W8kd+Tv
+      0TruLLJkLRVSSp5coOWnFF6HA49e7CCnNO7CHixdM22tUUECuFgUBJPMGPhmsgCxNIEwM7Gl
+      PcRAOEE8NSVKLLAXM34GaRU7wQl3La7X/8WC/PfL5fpYBLem0+hduqwUt7V3cHS6g5yigdOH
+      nY6U/tAaonIEMHoZJVRYvDlvASq9yDUZCLM0i2DTURXB3bvbefbk5MUhFCd68HZykWdKfkbb
+      8Kp5+++Xi5SSp67Mb9W3HLaEGrgcDmNPMeMKIdDabrtpkW8rSUUIQEqJHetDCbQWbL8+GKWj
+      aYYLfIkCYWbjnr0dPH+6p8B70ln/ENmRJ5Hy5mZTuxIZxe90Ue9ZmkW/cRQh2BwKcTFcmPh3
+      vfgFVYQAuOGCK7RCV97uGVKhA0g7i1AWHwgzG36Pk+Y6H5d6JifDih5EdXdglkigu1xIKXn6
+      yiVes2nzsgyvDrV28FJvT8E2pWEb9sjazxRREQKQqRGEp9AJTEoYGkvSFJzBB8iIouiLD4SZ
+      i4du28SPjxVWjXE1Pkx26LGbllR2OJnArenUuZd20W+cBq+XeDZD2pgSEyxUhDuEnRhalmNW
+      ChUhAHvkEuq0IBjTssjmTLzu0kOcvAVo6U2g09ncWsfwWIpocnLiq7jy7tp2pnR01VJzYqCP
+      fS2tyza5FkKwt7mVkwN9BdvU9kXMA6REWpVVWnY6UsrKEIA1gwXI657ZAmTnhpcsEGY2FEVw
+      z54OnjlxfWKbEAJn48Nkhh4rux3bloxE5+9laUtJVzjM1tDynuv+5lZOTBEALM4vyApfIvnP
+      b8W49AT55bvKw+o9WhkCsCNXUeo2FmzrHY7RNoMFCG5Egt2EJwDA3Xs6ePFs72TmOEDz78FK
+      d2MbM2Vcm8QwLT7/H8f40y88SVff/EyLPdExmvx+NGV5fyq3ruPWdcJT1gSUulvyKeHnOdST
+      tkX2mU/h/rlPYHb9hOwzn6q4p4E00uQOf27lBSCljUwMInzNBdvztcBmFkC+IszSBMLMhc/t
+      oLU+wIXu8MQ2IVSc9Q+SHfnRrJ9NZQz+99cPs7E5yMfe/xq+8N2XGIwkZv3MVAGd/3YAABex
+      SURBVI7397J/GYc/4wghiifDQkH4m/Nhm/PAPP84asM21Jb9uF733xH+FtL/8SHsxOAS93rh
+      5I59EW37z628ADAyoGhFrgPdg8XV4KeylIEw5VBqZdhRew/G2NGicMlxRmNpPvGVZ7n/wEbe
+      cMdmmmp9/MZbDvHpb7xILDV38Llp2/THYnTWlB/wshi21TdwMTyZuUIIgbbhbozz5Q/1ZCaK
+      cfLrOG7/QL4NRUXf90s47/wgme/9Aeb1lXe1tkYuYA2eQd/99pUXgB3vR/EXJsLNGRbXBqMz
+      u0FLG2mlliwQphw2tdYyGk8zlpicDAvVhV5ziFzk+aL9u4ei/M+vPsd7HtrDHTsn7+CbWmr5
+      hft38X8eeYFsbnZPzsujI2yorUWdY/gzEk3xo6NdDIwmFmWZUoSgI1jLlcjkk07b8Was3pew
+      huZ2jZBSkj38OfRD/zfCMfnb5APu9+N68ycxTnyV7JF/QK5QVZp8vtVP4bz3Q0jDrgABhIvT
+      oBw+08OBLU24HKW9HaUxilD0JQ2EmQtFCO7d28m/PXGKnuHYxIXmbHg9uZEfFyyMnb46zOe+
+      fYzffscdbO+sLxq+7N/cxL17O/nbbx8tmFdM53h/Hwda2mbtVzyV5ZNfP0wybfAvPzzBn37h
+      Sf7p8eOc6BqcU2DTEUJwa2s7x6YMg4Sq43rwz8g+9XFkbvahmz10FhnvR9v82pLvK546XG/6
+      K5A2me/9AXYqXHK/ZUNKckf/Ea3jDtS6zRjXrs3PHdo2cwyGo9QF3KQM0ITE53WTSOXw+xZm
+      o7ZHLqF23DHx2rJsnjh2hQ//4l0znIMk3f8NnI1LVyurXO7b14mqCr7x9FmGIkk6GgMc3NbC
+      RkK4EmfR/Xt49uR1fnzsMh/95VcR9JXO0SOE4DUHNhCOpfmXH53kvW/YVySSjGkSzaRpnMXr
+      M2uYfPLfD/OuB3axf3MTADnT4lLPKC9dHOCRp87gdesc2tbCAwc3oalz3zBa/AHCqSRZ05xI
+      raj4m9FvfR+ZJz+O+/V/XuCxO460LbLPfgrXa/9k1vmKUDQct/8GVvcLZL77YfT970bb9sab
+      UnbK7D2KPXwe15v+EoQgffw4Qs7jmZlOJui53ot06QhLkhgdpqm1mXAadm/uxLIslHlaK7Lf
+      /0Mc934Y4cv/gK90DfLShX7e/3MHSu5vZ66T7vkS3i1/zHKuAs+FYdpcHxzj5YsDnLnSB3aM
+      xoaNpDJZfuvtt+Mu9fSys0grBuYYdm4UKzfCP/7wGq0N9Ty46RSadyvOlneD0Dk52E8knebV
+      G28pbgewbMmnv3mEQ1ubePX+0tmjbSmJxNM8cewKPcNx/p+fvx2nPne8xjPXruBzOjnQPNU1
+      RZJ9+q/Qmnai7nhLcX/OPIoVH8Jx5wfnbH+ixVyC3POfRaTDOO77CCxx/bOCY6UjZL/3EZxv
+      /EuEtx6kZOQv/2p+T4D42AgZKXCZJlkTGpob6B0coyFUl89uoCjzE4C0ID2K6m8CkQ+oefyF
+      Ln794YOl25E2qb6v4Gn/FZQVrmbidChs7ahna0c9Uu5m6MwnGFS2smvbock7rbQwU1cwosfy
+      rhPSQnGEUPRg/k9HPb/+tq18+nvDNGZv5dbaCyQv/QXejb/NycF+Ht6+u+T3IKXkn75/nK3t
+      ddx/cGbXawVoCPp494N7ee5UN5/4yrN8+BfvLllmdioHW9t55NQrHGotzM/kvu/3SX/rP6M2
+      70OpmzyuTEcwzv4Hnp//HJTx+0tp8/nn/4b9rYe464E/xOo7TuYHf4S+863ou94GSz20tS0y
+      T38C552/ierPi8wcCaO4PfMTQKi5nUDIRNd1pMwvErW05asmjj/C5vMok7k0aO6JuNmu3gg+
+      t4OmWm/JdozYKyh6DapneXxiFooQglDHGwhEX0SVmzAiJ8iNHcXODqC6O9FrbsXV9GaEWvq8
+      fvsdW/jEV57FvnUfd27azlDX32IY91PrdpcoCQvf+OlZXA6Nt7xqW9nfwz17O6nxuvj4V57l
+      Q++6k6YSpabG8TudaIpCNJMh6HZPvqG7cD34p+SO/xuu1/4RIJBSknvuMzjv+A2E7p6xzak8
+      felJHJqTH51/nB1Nu6htO4T69r8ld+QfyHz393G++qMowY65GyqT3ImvodRtRO28a+L7yp4+
+      jWvPbtSPfexjHyu3IUVR0DRt4k4/ftcfb1RKOa8ngB3uQiYG0Dbei5SSL/3wBG+9Zzt1geIv
+      UtoGyWt/g7fzgyja8vjELAbF2Uhm4FsY0RcQqg9X/YO4Wt6Oo/YuVHc7QnHMeLHqmsqt21s4
+      fKaXbz43wJC2i62uEzRaJ9D8exBi8mn3xLHLXO2PzPyUnIa0DTIDj6I46mluaGRrWx3/55sv
+      srm1llp/6Qt2/IZ2ORJmU+20tRZXEHvoDDIVQQ1txu5/Bav3KI7bfr0sMfaOdfPd04/ym/f8
+      Li2BVr518t+5o/PufIqZ9jtQajeQffrj2MlhhMOD0Jw3XMwXdsOzBk9hnHoU1wP/b0GIauw/
+      HsP3wAPzE8BczFcA1vXnEK5a1KZd9IcTHDvfP+NdLTv8QxS9Dkfw9qXq7pIihIIjdD+O0APo
+      /l0oenBeViqnrrF/cxO3bW/lP46d5+K1euzcCCHjOzgDu1A0P0fO9fGzE9f43V+4E72M2Gvb
+      jJPs+jiKXkum/xsI1UNd/VYObGnms48eob7GM+PTts7t4YcXz3NbW0fB+0II1MZdZJ/6OGrr
+      AbI//StcD/wximvuEM2cmeWzz3yK9935n6j11FHvbeDiyAXi2RidtRvzN1RfI9q2NyKjPZhX
+      f4Zx+lGMU9/EvPgjrIGT2LFeZC6FcAXmLBoos3EyP/yvuB76MxTP5FqKncmQfOop/G98w8oK
+      wDj3GFr7bQhfM1/7ySkeOLSJ5rriR7Ntxkn3/DPeDR9cVv//xSKEsuihWcLMElNTfPChO7g4
+      EuRrhyWxvsdJGxrfeWGYj7z7btyOub8DK9NHsusTuFvehaP+dThD95Idegxj7Ag1jbdy1+6N
+      fPHx4yiKoLOppqjfihD0xsbwOpzUuAqfFELVURp3kv7Wf0bf8TDapuJMGdORUvK1l7/M7pb9
+      7GvNGziEEGxr2MG/Hvsie1sP4NbzT3ahqKiNO9E23Ye2/U3oOx9Gu+U1KP5mMFLYg6fIHfsn
+      rMHTCH8ziruuyDIlpU32yf8Pbedb0Vr3F7yXvXgRO53BvX8fyCXENM157Z/6zu9JKxmWo7GU
+      /K9feFJatl1iL1smr39RZkaeWpI+Vjo/6bogX+nvnXidzhrysecvyI/9w3fl9Zc/JnPRE9Iu
+      +T1NkoudlNHTH5Fm6lrBvrZty2z4pzJ65r9II3FBZnOm/J9ffU5+8+kzJdu8FhmVj546UfIY
+      tm1Ls/dlaZvZss7rpe4j8m9+9smSxzk7cFp+6qlPSMu2ympLSilty5RG9xGZ+t4fyuSjvyVz
+      F35Y0JfcqUdl+qlPlDxe5F+/ItOnTksppVwxAdimIZP//n5p27b8yo9PymdPXi/dZrpXxs79
+      ibTt+YlrNWLbtvy7F56VGcMo+Z6Z6ZeJy5+SsfP/TRrx8yV/3MzwEzJ27o+llYvMeBwzMyhj
+      5/5EpvoekaZpyi99/7j860cOy0yu8Li2bcvPHn5G5uZ5Y5tOODkiP/b4H8l4Jl7yfdu25VeO
+      /pN8+tIT827btm1pxfpl5vnPyuTX3iszhz8njavPyeQjH5B2LlW8v2XJwb/4H9JKp6WUUq7c
+      SnAugXD4SGdNTl0e4o6dxSueUkrSvV/B1frLBRPBtUpfPEbI452WqCqPEALV2Yxn4+/i6Xg/
+      mcFvk+z6OGbqKlJKpLRJ9/4LRuw4vq1/OmuyANXZiG/bn4E0SHX9Oe+5v40DW5r5H1/6GeEp
+      LttCCHY2NPH0lUvYC3SxsGyLL77wd/zyoV/FN0PRDyEEP7/vl3j60k8YSRbXLpgNIQSKvxnn
+      Xb+F+x2fR6ndhPHKV3E+8EclrVKpw4fR29tRbhQSmddC2FxYllV2Yiyr92XMK0/xI/VhNFXh
+      jXdsKdrHiJ8mO/Q43ls+UlFmz+Xie+fPsK2+gS1l+P5LKbFSl0n3fTVfI802UN2duFrfXf7k
+      W0rM5DlSPV9CdbXTY7yKf3wizPvfdIAdnfkIPdO2eeryJbqjEd62c++cRTim9/GxM9/CtC3e
+      tuedc/6GF4bO8diZb/N7r/koyqLWAiSlrEbG4CCjn/97Gv7LR1BumHdXbBIsk0OYnmb+9fAI
+      733DfnStUDhSmqSufgZPxwdQ9LWfos+6caG9dvPWsn58IQSKow5H3X2ojloUZwvOhjfOzz9K
+      CBRHA47QaxGaD0/qcfaFzvDFJ/qRah2bWmpRFcGm2joavT6+dfYklm3TFiieNJeiK3yRn3U9
+      xfvu+I2yros6T4jrkauEk8NsDJVeAS/zxIq2SMMg/Nm/pfZX3oPWMHmDWbEhkNqynyOxFg5u
+      acbtLLZq5MI/RfVuQ3U1l/j02kJKycv9vbTX1KDNc4VbCIHm24mj9q4FPyWFUND9u/He8ge0
+      7vkwf/AWD6dPfpcvPPYiRi6BEIK2miC/duudjGXSfPP0CXLW7I52w4khvnzkC/zaXb+JWuY5
+      CSF4+7538cyVpxhewlhkKSXRR7+F++BB9A2FbiMr9gSwbJsvPn6cX33DvgKvTyklRuQ5ssM/
+      wNP5QYSyPHl2KoXRVIpvnT1JIpvloS3bS47/bxZCCBTNi6NmH3fsO8jgaJSvfu9xNvtO4PUG
+      0Z11+VJMAr515iQNPh9BV/E4+/zQWb74wt/x/js/SEvN7N6s09EUjdZAO18+8g9IJLFMlJyZ
+      zVfkUWdeTJyN7KnTZE6eIvjudxeU35VSrtwc4NSVIV4828uvvenglA7ZZAYexUpexLvpd5c8
+      9XklkbNMfnblMlciYV63dQedNcGKm+dIKTlzdZhHf3qKXOwUd27zcPf+/dQ2HiCWM3n8wlmi
+      mQyKEKhCwetwoCk2z13+MW/Z82baAo04NQ1dUdFVBV1Vb/xdRVNmXjORUnJp5Dy9Yz1E0qOM
+      pSNE02MkcgkEoAiV5kALO5t2s61hJ7WeuhnbsqJRRj7119R/6PdQa2om2j89cILHTn975QSQ
+      NSyQEueNu7+0c6Sufx6henG3v3fNWn2klJwZGuSnV7u4ta2DW1vb5wx4WWmklIwlMjx/uocX
+      Tl8moI3y4O272bNtG4rqzPsDWSZfPvoldNXHHRvuJ57LksxmyVomhmVj2BaGdeM/28K0bBCF
+      o/XpF7Hf4aTJ76fZF6Bx4mkjsWyLvlgPZwdPc2HoHLFMlNaaNnY27WF74w7qPPkYDMPIEv7M
+      Zxk+sIHkpibCqRFGkyNcHb1CR7CTh3e/feUEMBXbiJG88r/Rg3fhbHhDxd0Jl4qhRJzHL5yj
+      1u3moc3bcDscK+jQvTCklHQPRXniWBdnr1zFoViYtk04k0LBJOQOjO9IOgfBmhCtdRod9Q46
+      6gQttQp+rwehBRF6EKH5mZCBlEggY5ikMgaD0QRdw2EuDYfpi8QwcjYhpxeP4sTvdNIQ9FDr
+      d+P36qSsEfoSl+hPXiaeHUNVFDpfGWCnZyOX7uok5A0RdIcIukL4HXWkM4L+0cTKC8DK9JK8
+      8incre9BCxxYUxe/lJLRdIpzw0NcGBlCEYLXbdlOiz+w6s9TSoktJYOxfj7//Gd4655fYP8U
+      lwMh8p6rWcOkdzjK9aEk14ei9A5FSMQH0e0BdNUiZ/tBCyKlwLbS2FYah2rgdmh4XApep8Dv
+      1vG5Hfg9+T811SaVMxlJmgzHcgzHDMJJSTTnI2040RUFj2Fix+JkaoPYSFRy6MLAIQzcOtR5
+      JU0Be2ECiIwMEM+CIk1aGoP0hbN0tITmLQAjdpJ075fwbvwdVHfnfLtRkVi2TU8syrmhQa6O
+      jRJwutje0Mi2+ga8+sImcZWClJKMmSaRTZDMJeiP9fGDc4/x63f9Fh3B8n6/ceGksya2LXE5
+      NPI1SCwwR5G5EWxjBGmM3qi7JhgfK4kbf5fSZCLXkG0ipYmUFra0yVgqYwkB/3qU4HvfgBYK
+      4HS4UTU/ihZA0f0oivNGzIGyMAFcv55PEpUYHUT11iE0nS0b2rFvJJG1bXvCGjTT3xOXzxP+
+      6l+hujfdeAxWCoKFJnKSCAbiceLZDC5N0BaoQS8Rhjj9K5dT/y/HX0ny/+Zf29K+MUS48c+N
+      9+T4NmnnnfEmzuHG/4WYMswaj9mYuo+YOJ6U9pT2Jv/MmlmSufxFb9oWUtrY0kYRKvtaD+Cv
+      sFJKxuAQntc9hPuuOycsk/nV8sm/ww2374UIoPf6ZeJZCNV4GBmNEqwJ0tLSNL+VYCNHdLB/
+      vodedqQsGfJaFoJ8WvWprwv/kn9RcOmJyVfjF6YQ4sbryT+rzANFQa2tLet7W/E5QJUqK0ll
+      29+qVFlmqgKosq6pCqDKuqYqgCrrmqoAqqxrqgKosq6ZV2KsuRBCYFmTSWKnLnxNR0o5q512
+      Me/Pddzxvs633bk+O9txy2l7Md/Hcn3XC/2eF9Puch53+vtLKoDpnRpPnHWzWW/HXaljr4Xv
+      eUkXwqpUWW0s6RMA4Njh5/A1tNDZVEciK/H73GCbjIzGqPE5icZTuNxuBvr62LRlG2PhEUL1
+      dWSyBmYmQfdgGJewUd0BNJkmnTVJZy02bd1OKOABK8vzR0/RGnSRcwVwqhqNoQCZrEEimSQe
+      idC2aQvCSHLx0jXcfjemrRB0qSRyYOSy7Nu7e1Hn2NfXR11dHZChpzvKhg0tSEVlsPsKsUSa
+      nJkjWNvI2MgwTZ1tpFM5Nm+cf67L5597jqaWVkI1XqTqwOXxYqWTxNIGTsUklTXxe1UudyfZ
+      tb2dkdEYdQEXBjqJ0UEiyRRmIk2gvp5MYhSnv5mckWbHlvLibXuuXsB21HHl4mn27tyO4g5g
+      pRNYqkIsEsHrr6W53s/5cxfImvn0+fWt7QwODNLWUEM4nmXPzm3zPu9xMpE+Rqmjzg0D/X00
+      t7YjkKTiY3R1D+J3CqTmxqGYGFLHTMcJdWymubZ836QlDYkEkFhcvdoLAtKpJKlYmL7rfYzG
+      4+SkhiItpJnD4XLTc+EEg/EsiXiK5pYWjEya2voGTAsULDTdRX2NF91TA0LB73GBtIiPjZE2
+      BXYuxUBfHykLFCODL9SAZZoYuSwuh4anpg5MMx+NpGu0tHegYOP3L9x5S0pJJBIhHo8xNhZG
+      sVWu9/XS0NRMOpmgPhREdXvIpLME6xtobWokk04u6JhWNkHvcAykTTIZJ9zXQ//IKMlUBqGq
+      2JaFmYnicPs58fIrZCybbCZNc1MT6VSCxqYGLEtHWml0dx2bOlswspmy+5JIZclEerEctUgj
+      Qf9gGFtaeGyDnFQAm4DfRyJt4fc4CPqdpKVOS2MD0jJobG7BoS/sHiulJBUdpWckTjoRQVVV
+      oqODmMKFptgEa+vz6fiFRNedNLc0YdoKrU2heflOLfkToL6hBa8viEOVxLMCr0Oh4xY33dd7
+      aWppRhWAlAwPDbD90KsY6u+joakFl64Sty2ikRi1fjeqy8dIfzeWvxnVSNAUuhFooejcsmUL
+      pmWBNAkE66hvaMClCXoGhmlpyQfRZ1MxopExmhrqMKRKcnSYSHiUVDLOaDRBXc3M2ZFnI5OM
+      4Q3UQS6O4gzhUARiVMepCUzTIGX70ewcbc0hevuHGFJsEqkMli0LHOXKoaXjFoL1abCySIcf
+      VZq4HCr9w1GaGkN5ZzrbpG9gmHvuu4vegRFamxpRFYFlmoxFs3hcAn+wne7uHoaGVOLxOFlT
+      4tTm7ksoFCIQCNCmqiRjEUItfrwuB/F4jHqXD6eugG2Ty6aobWklEU9Q64BwJIJXl0TGovg8
+      pYuEzIm0SdgOdnb6GBxL0VhXQ39vDw0NQWIjA0SiERpq/UjVxehQH7FojEw6QTJt4PeUH0de
+      nQNUWddU1wGqrGuqAqiyrlnyOUCVNYa0eeTr/4Yv1M6OjU2oDoWrvVmaajVu2b6TMqYSFU1V
+      AFXmpLltI8lkgksXzpFRwJG0eOayxFXXTmdjZYVDzpeqAKrMgaC+1seufQeJDvXgDzViGxk6
+      hoaprymvJlglU7UCVVnX/P82ESAmIC5CeQAAAABJRU5ErkJggg==
+    </thumbnail>
+  </thumbnails>
+</workbook>
